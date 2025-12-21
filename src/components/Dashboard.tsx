@@ -1,7 +1,7 @@
 export default function Dashboard() {
   return (
-    <section>
-      <h1>Ini dashboard </h1>
+    <section className="flex justify-center items-center h-full">
+      <h1 className="text-white">Ini Dashboard </h1>
     </section>
   );
 }

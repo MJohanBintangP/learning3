@@ -1,7 +1,7 @@
-export default function Account() {
+export default function Accounts() {
   return (
     <section>
-      <h1>Ini section Account</h1>
+      <h1>Ini section Accounts</h1>
     </section>
   );
 }

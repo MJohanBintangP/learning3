@@ -2,6 +2,12 @@ import { Routes, Route } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
 import Dashboard from "../components/Dashboard";
 import Account from "../components/Account";
+import Transactions from "../components/Transactions";
+import Analytic from "../components/Analytic";
+import Invoices from "../components/Invoices";
+import Clients from "../components/Clients";
+import Settings from "../components/Settings";
+import Help from "../components/Help";
 import NotFound from "../pages/NotFound";
 
 export default function AppRoutes() {
@@ -10,12 +16,12 @@ export default function AppRoutes() {
       <Route element={<MainLayout />}>
         <Route path="/" element={<Dashboard />} />
         <Route path="/accounts" element={<Account />} />
-        <Route path="/transactions" element={<Dashboard />} />
-        <Route path="/analytic" element={<Dashboard />} />
-        <Route path="/invoices" element={<Dashboard />} />
-        <Route path="/client" element={<Dashboard />} />
-        <Route path="/setting" element={<Dashboard />} />
-        <Route path="/help" element={<Dashboard />} />
+        <Route path="/transactions" element={<Transactions />} />
+        <Route path="/analytic" element={<Analytic />} />
+        <Route path="/invoices" element={<Invoices />} />
+        <Route path="/clients" element={<Clients />} />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/help" element={<Help />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
