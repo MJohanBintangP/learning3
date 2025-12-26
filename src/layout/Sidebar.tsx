@@ -19,10 +19,10 @@ export default function Sidebar() {
   return (
     <nav
       className={`transition-all duration-200 bg-[#070A13] flex flex-col min-h-screen border-r border-r-white/15 ${
-        Open ? "w-14" : "w-67"
+        Open ? "w-16 items-center" : "w-67"
       }`}
     >
-      <div className="flex items-center justify-between border-b border-b-white/15 p-4">
+      <div className="flex items-center justify-between border-b border-b-white/15 px-4 py-4.5">
         <h1
           className={`text-white font-semibold text-xl ${
             Open ? "hidden" : "block"
@@ -36,12 +36,12 @@ export default function Sidebar() {
           }`}
           onClick={() => setOpen(!Open)}
         >
-          <LucideChevronLeft size={18} color="gray" />
+          <LucideChevronLeft size={20} color="gray" />
         </button>
       </div>
       <div className="flex flex-col justify-between flex-1">
         {/* top nav */}
-        <div className="flex flex-col gap-2 p-4">
+        <div className="flex flex-col gap-2 p-3">
           <NavLink
             className={({ isActive }) =>
               `flex items-center w-full gap-3 ${
@@ -55,7 +55,7 @@ export default function Sidebar() {
             to="/"
             title="Dashboard"
           >
-            <LayoutDashboard size={18} />
+            <LayoutDashboard size={20} />
             <span className={Open ? "hidden" : "block"}>Dashboard</span>
           </NavLink>
           <NavLink
@@ -71,7 +71,7 @@ export default function Sidebar() {
             to="/accounts"
             title="Accounts"
           >
-            <Wallet size={18} />
+            <Wallet size={20} />
             <span className={Open ? "hidden" : "block"}>Accounts</span>
           </NavLink>
           <NavLink
@@ -87,7 +87,7 @@ export default function Sidebar() {
             to="/transactions"
             title="Transactions"
           >
-            <CreditCardIcon size={18} />
+            <CreditCardIcon size={20} />
             <span className={Open ? "hidden" : "block"}>Transactions</span>
           </NavLink>
           <NavLink
@@ -103,7 +103,7 @@ export default function Sidebar() {
             to="/analytic"
             title="Analytic"
           >
-            <TrendingUp size={18} />
+            <TrendingUp size={20} />
             <span className={Open ? "hidden" : "block"}>Analytic</span>
           </NavLink>
           <NavLink
@@ -119,7 +119,7 @@ export default function Sidebar() {
             to="/Invoices"
             title="Invoices"
           >
-            <ScrollText size={18} />
+            <ScrollText size={20} />
             <span className={Open ? "hidden" : "block"}>Invoices</span>
           </NavLink>
           <NavLink
@@ -135,13 +135,13 @@ export default function Sidebar() {
             to="/clients"
             title="Clients"
           >
-            <Users size={18} />
+            <Users size={20} />
             <span className={Open ? "hidden" : "block"}>Clients</span>
           </NavLink>
         </div>
 
         {/* bottom nav */}
-        <div className="flex flex-col gap-3 border-t border-t-white/15 p-4">
+        <div className="flex flex-col gap-2 border-t border-t-white/15 p-4">
           <NavLink
             className={({ isActive }) =>
               `flex items-center w-full gap-3 rounded-xl ${
@@ -155,7 +155,7 @@ export default function Sidebar() {
             to="/settings"
             title="Settings"
           >
-            <Settings size={18} />
+            <Settings size={20} />
             <span className={Open ? "hidden" : "block"}>Setting</span>
           </NavLink>
           <NavLink
@@ -171,7 +171,7 @@ export default function Sidebar() {
             to="/help"
             title="Help"
           >
-            <HelpCircle size={18} />
+            <HelpCircle size={20} />
             <span className={Open ? "hidden" : "block"}>Help</span>
           </NavLink>
           <NavLink
@@ -182,7 +182,7 @@ export default function Sidebar() {
             to="/"
             title="LogOut"
           >
-            <LogOut size={18} />
+            <LogOut size={20} />
             <span className={Open ? "hidden" : "block"}>LogOut</span>
           </NavLink>
         </div>
