@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
 import Dashboard from "../components/Dashboard";
-import Account from "../components/Account";
+import Account from "../components/Accounts";
 import Transactions from "../components/Transactions";
 import Analytic from "../components/Analytic";
 import Invoices from "../components/Invoices";
